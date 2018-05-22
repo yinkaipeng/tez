@@ -38,6 +38,7 @@
     <hadoop.version>2.7.3.2.6.5.0-SNAPSHOT</hadoop.version>
     <gcs.version>1.8.1.2.6.5.0-SNAPSHOT</gcs.version>
     <jetty.version>6.1.26.hwx</jetty.version>
+    <netty.version>3.10.5.Final</netty.version>
     <pig.version>0.13.0</pig.version>
     <javac.version>1.8</javac.version>
     <enforced.java.version>[${javac.version},)</enforced.java.version>
@@ -186,6 +187,11 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>1.7.5</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ning</groupId>
+	      <artifactId>async-http-client</artifactId>
+	      <version>1.9.40</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
