@@ -8,7 +8,7 @@ NEW FEATURES
   RMP-4813. Better handling of AM failures in Tez Job Commit stage
 
 IMPROVEMENTS
-  TEZ-1526. LoadingCache for TezTaskID slow for large jobs (jeagles)
+
   TEZ-3771. (BUG-89114) Tez UI: WASB/ADLS counters should be listed on the Tez UI
   TEZ-3703. (BUG-87833) Use a sha comparison to compare vertex and dag resources, if there is a mismatch
   TEZ-3610. (BUG-77078) TEZ UI 0.7 0.9 compatibility for url query params and tez-app sub-routes (jeagles)
@@ -130,7 +130,7 @@ IMPROVEMENTS
 
 BUG FIXES
 
-  HOTFIX-2092 Delete ember generated bower dir on clean
+  BUG-111756 TEZ-3943. TezClient leaks DAGClient for prewarm (Sergey Shelukhin via jlowe)
   TEZ-3491. (BUG-85678) Tez job can hang due to container priority inversion.
   TEZ-3784. (BUG-84794) Submitting very large DAG throws com.google.protobuf.CodedInputStream exception
   TEZ-3656. (BUG-67648) Tez UI: Status correction is not working as expected (sree)
