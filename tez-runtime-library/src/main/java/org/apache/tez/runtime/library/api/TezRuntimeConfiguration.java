@@ -510,7 +510,7 @@ public class TezRuntimeConfiguration {
   @ConfigurationProperty(type = "integer")
   public static final String  TEZ_RUNTIME_SHUFFLE_BATCH_WAIT =
       TEZ_RUNTIME_PREFIX + "shuffle.batch.wait";
-  public static final int TEZ_RUNTIME_SHUFFLE_BATCH_WAIT_DEFAULT = -1;
+  public static final int TEZ_RUNTIME_SHUFFLE_BATCH_WAIT_DEFAULT = 1;
 
 
   /**
