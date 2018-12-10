@@ -1,0 +1,63 @@
+--------------------
+Celtic-GA Changes
+--------------------
+
+BUG-113463: Set default tez.runtime.shuffle.batch.wait to 1 second
+TEZ-3976: Batch ShuffleManager error report events
+TEZ-3984: Shuffle: Out of Band DME event sending causes errors
+TEZ-3980: ShuffleRunner: the wake loop needs to check for shutdown 
+TEZ-3958: Add internal vertex priority information into the tez dag.dot debug information 
+TEZ-3978. DAGClientServer Socket exception when localhost name lookup failures 
+TEZ-3974: Correctness regression of TEZ-955 in TEZ-2937 
+TEZ-3934. LegacySpeculator sometime issues wrong number of speculative attempts 
+TEZ-3942. RPC getTask writable optimization invalid in hadoop 2.8+
+TEZ-3965: TestMROutput: Fix the hard-coded /tmp/output paths 
+TEZ-3916: Add hadoop-azure-datalake jar to azure profile 
+TEZ-3970. NullPointerException in Tez ShuffleHandler Ranged Fetch 
+TEZ-3964. Inflater not closed in some places 
+TEZ-3912. Fetchers should be more robust to corrupted inputs 
+TEZ-3963. Possible InflaterInputStream leaked in TezCommonUtils and related classes 
+TEZ-3954. Reduce Tez Shuffle Handler Memory needs for holding TezIndexRecords 
+TEZ-3960. Better error handling in proto history logger and add doAs support. 
+TEZ-3962. Configuration decode leaks an Inflater object 
+TEZ-3953: Restore API-compat for DAGClient for TEZ-3951 
+TEZ-3951. TezClient wait too long for the DAGClient for prewarm; tries to shut down the wrong DAG 
+TEZ-3944. TestTaskScheduler times-out on Hadoop3 
+TEZ-3938. Task attempts failing due to not making progress 
+TEZ-3949. TestATSHistoryV15 is failing with hadoop3+ 
+TEZ-3946. NoClassDefFoundError, org.apache.hadoop.mapred.ShuffleHandler. 
+TEZ-3929. Upgrade Jersey to 1.19 
+TEZ-3947. TestATSHistoryWithACLs fails with Hadoop3 and Jersey 1.19 
+TEZ-3943. TezClient leaks DAGClient for prewarm 
+TEZ-3939. Remove performance hit of precondition check in AM for register running task attempt 
+TEZ-3940. Reduce time to convert TaskFinishedEvent to string 
+TEZ-3902. Upgrade to netty-3.10.5.Final.jar 
+TEZ-3935. DAG aware scheduler should release unassigned new containers rather than hold them 
+TEZ-3937. Empty partition BitSet to byte[] conversion creates one extra byte in rounding error 
+TEZ-3824. MRCombiner creates new JobConf copy per spill 
+TEZ-3933. Remove sleep from test TestExceptionPropagation 
+TEZ-3911: Optional min/max/avg aggr. task counters reported to HistoryLoggingService at final counter aggr 
+TEZ-3932. TaskSchedulerManager can throw NullPointerException during DAGAppMaster container cleanup race 
+TEZ-3931. TestExternalTezServices fails on Hadoop3 
+TEZ-3930. TestDagAwareYarnTaskScheduler fails on Hadoop 3 
+TEZ-3927. TestReduceProcessor fails on Hadoop 3.x 
+TEZ-3924. TestDefaultSorter fails intermittently due random keys and interaction with RLE and partition collisions 
+TEZ-3914. Recovering a large DAG fails to size limit exceeded 
+TEZ-3887. Tez Shuffle Handler should support Index Cache configuration 
+TEZ-3914. Recovering a large DAG fails to size limit exceeded 
+TEZ-3817. DAGs can hang after more than one uncaught Exception during doTransition. 
+TEZ-3915. Create protobuf based history event logger. 
+TEZ-3909. DAG can hang if vertex with no tasks is killed 
+TEZ-3907. Improve log message to include the location the writers decide to spill output 
+TEZ-3874. NPE in TezClientUtils when "yarn.resourcemanager.zk-address" is present in Configuration. 
+TEZ-3892: getClient API for TezClient 
+TEZ-3897. Tez Local Mode hang for vertices with broadcast input. 
+TEZ-3888: Update Jetty to org.eclipse.jetty 9.x 
+TEZ-3898. TestTezCommonUtils fails when compiled against hadoop version >= 2.8 
+TEZ-3896. TestATSV15HistoryLoggingService#testNonSessionDomains is failing 
+TEZ-3893. Tez Local Mode can hang for cases. 
+TEZ-3894. Tez intermediate outputs implicitly rely on permissive umask for shuffle 
+TEZ-3895. Missing name for local mode task scheduler service async request handler thread 
+TEZ-3770. DAG-aware YARN task scheduler 
+TEZ-3880: Do not count rejected tasks as killed in vertex progress 
+TEZ-3877. Delete unordered spill files once merge is done 
